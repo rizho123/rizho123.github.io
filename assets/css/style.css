@@ -4,14 +4,21 @@
     height: 60px; 
 }
 
+.mainheader:hover {
+    text-shadow: 0 0 5px Crimson;
+    box-shadow: 0 0 5px rgb(0, 121, 105);
+}
+
 h1 {
     color:white;
     text-align: center;
+    font-weight: normal;
     float: left;
     margin-bottom: 30px;
     font-size: 20px;
     width: 100%;
 }
+
 
 h2 {
     color: rgb(0, 121, 105);
@@ -34,6 +41,7 @@ ul {
     padding-top: 10px;
 }
 
+
 li {
     float: right;
     position: relative;
@@ -44,15 +52,18 @@ li {
 li a {
     display: block;
     padding: 1px 10px;
-    background-color: #ffffff;
     text-decoration: none;
     color: #949494;
 }
 
 li a:hover {
     color: rgb(0, 121, 105);
-    background-color: #aaa3a32f;
+    text-shadow: 0 0 2px rgb(0, 121, 105);
+}
 
+li a:active {
+    text-shadow: 0 0 7px green;
+    color: white;
 }
 
 footer {
@@ -79,6 +90,7 @@ h3 {
     padding: 20px;
     margin: 0 auto;
     min-height: 100%;
+    box-shadow: 2px 2px 15px black;
 }
 
 .container {
@@ -89,7 +101,7 @@ h3 {
 }
 
 .backgroundimage {
-    background: url("https://marble.com/uploads/materials/958/1280X720/granite_Snow-White_Q53QYIhU0rIWRSJKtzSg.jpg");
+    background: url(../images/granite.jpg);
     min-height: 100%;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
@@ -98,22 +110,56 @@ h3 {
     float:left;
 }
 
+.imgset {
+    content: "";
+    clear: both;
+    display: table;
+    position: relative;
+}
+
 .portfolio {
     position: relative;
-    text-align: center;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
 
+.pfolpic1 {
+    box-shadow: 2px 2px 7px black;
+    outline: 1px solid white;
+    outline-offset: -5px;
+    display: block;
+    
 }
 
 .text1 {
     position: absolute;
-    left: 50%;
-    top: 80%;
+    font-family: Poiret One;
+    top: 70%;  
+    background: rgb(0, 121, 105); 
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    padding-top: 20px;
+    opacity: 0;
+    transition: .5s ease;
+    box-shadow: 0 0 5px rgb(0, 121, 105);
+    text-shadow: 0 0 5px white;
+}
+
+.portfolio:hover .text1 {
+    opacity: 0.9;
 }
 
 #nfield1 {
     width: 890px;
     height: 25px;
     padding: 0 10px;
+}
+
+#nfield1:hover, textarea:hover {
+    box-shadow: 0 0 1px rgb(0, 121, 105);
 }
 
 .submitb {
@@ -125,7 +171,7 @@ h3 {
     width: 100px;
     height: 31px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 3px;
     margin-top: 10px;  
 }
 
