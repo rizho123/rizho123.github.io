@@ -35,6 +35,8 @@ footer {
     background: #ffffff !important;
 }
 
+
+
 body {
     background-image: url('../images/coloradosprings.jpg'); 
     background-attachment: fixed; 
@@ -74,7 +76,7 @@ body {
     height: 300px;
 }
 
-.imgset {
+.imgset, .contactback {
     width: 960px;
     content: "";
     clear: both;
@@ -86,6 +88,10 @@ body {
     border-radius: 15px;
     max-width: 1000px;
     margin: auto;
+}
+
+form {
+    width: 100%;
 }
 
 .imgset, .imgset > .column {
@@ -175,15 +181,25 @@ textarea {
     padding: 0 10px;
 }
 
-
-/*@media screen and (max-width:900px) {
-    .portfolio, .imgset, .text1 {
+@media screen and (max-width: 800px) {
+    .portfolio, .imgset, .text1, body {
         width: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-}*/
+}
 
 @media screen and (max-width: 800px) {
-    .portfolio, .imgset, .text1 {
+    .navbar-brand, .pfolpic1 {
+        width: 100%;
+        float: none;
+        text-align: center;
+        object-position: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .descript, form, .contactback { 
         width: 70%;
     }
 }
