@@ -1,208 +1,216 @@
-footer {
-    background-color: #000000;
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    border-top: 5px solid #008d76;
-    text-align: center;
-    color: white;
-}
 .navbar {
-    background: #00565c;
-    border-bottom: 1px solid #000000;
-}   
+    background: #233b7e;
+}
+
 .nav-link, .navbar-brand {
-    color:#ffffff;
+    color: #f4f4f4;
     cursor: pointer;
 }
-.navbar-brand:hover {
-    color: #ffffff;
-}
+
 .nav-link {
     margin-right: 1em !important;
 }
+
 .nav-link:hover {
-    background: #ffffff;
-    box-shadow: 0 0 5px #000000;
-    border-radius: 5px;
-    color: #000000;
+    background: #f4f4f4;
+    color: #0074f9;
 }
+
 .navbar-collapse {
     justify-content: flex-end;
 }
+
 .navbar-toggler {
     background: #ffffff !important;
 }
 
-
-
-body {
-    background-image: url('../images/coloradosprings.jpg'); 
-    background-attachment: fixed; 
-    background-size: cover; 
+.header {
+    background-image: url("./images/seattle.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     background-position: center;
 }
 
-.descript {
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.568);
+}
+
+.description {
     position: absolute;
     top: 30%;
     margin: auto;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 600px;
-    border-radius: 15px;
 }
 
-.descript h1 { 
-    color: #008d76;
+.description h1 {
+    color: #1352a3;
 }
 
-.descript p { 
-    color:rgb(0, 0, 0); 
-    font-size: 15px; 
-    width: 100%; 
+.description p {
+    color: #666;
+    font-size: 20px;
+    width: 50%;
     line-height: 1.5;
 }
 
-.descript button { 
-    border: 1px solid #008d76; 
-    background:#008d76; 
-    color:#fff;
+.description button {
+    border: 1px solid #2caaff;
+    background: #0077ff;
+    color: #ffffff;
 }
 
-.container {
-    width: 960px;
-    height: 300px;
-}
-
-.imgset, .contactback {
-    width: 960px;
-    content: "";
-    clear: both;
-    display: table;
+.about {
+    margin: 4em 0;
+    padding: 1em;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.6);
-    top: 100px;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 1000px;
-    margin: auto;
 }
 
-form {
-    width: 100%;
+.about h1 {
+    color: #1352a3;
+    margin: 2em;
 }
 
-.imgset, .imgset > .column {
-    padding: 8px;
+.about img {
+    height: 100%;
+    width: 55%;
+    border-radius: 50%;
+    margin-left: 15%;
+    box-shadow: 2px 2px 12px #4e4e4e;
+}
+
+.about span {
+    display: block;
+    color: #888;
+    position: absolute;
+    margin: 1em;
+}
+
+.about .desc {
+    padding: 2em;
+    border-left: 4px solid #10828C;
+}
+
+.about .desc h3 {
+    color: #10828C;
+    padding: 5%;
+}
+
+.about .desc p {
+    line-height: 2;
+    color: #888;
 }
 
 .portfolio {
+    margin: 4em 0;
     position: relative;
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+    background-image: url("./images/rainier.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 7%;
 }
 
-.portfolio:hover .text1 {
-    opacity: 0.9;
+.portfolio h1 {
+    color: #1352a3;
+    margin-top: 15%;
+    padding-top: 5%;
+    position: relative;
+    z-index: 1;
 }
 
-.pfolpic1 {
-    box-shadow: 2px 2px 7px black;
-    outline: 1px solid white;
-    outline-offset: -5px;
-    display: block;
-    margin: auto;
-    max-width: 300px;
-    height: 200px;
+.portfolio img {
+    height: 15rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.portfolio img:hover {
+    filter: brightness(120%);
+    box-shadow: 0 0 20px rgb(114, 114, 114);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+}
+
+.projects {
+    margin: 4em 0;
+    padding-top: 5%;
+    position: relative;
+}
+
+.projects h1 {
+    color: #1352a3;
+    margin-bottom: 5%;
+}
+
+.projects .card {
+    box-shadow: 0 0 20px #ccc;
+}
+
+.projects .card img {
+    height: 15rem;
+    width: 100%;
+    max-width: 600px;
     object-fit: cover;
 }
 
-.text1 {
-    position: absolute;
-    top: 70%;  
-    background: rgb(0, 121, 105); 
-    color: white;
-    text-align: center;
-    width: 300px;
-    height: 60px;
-    padding-top: 20px;
-    opacity: 0;
-    transition: .5s ease;
+.projects .card-title {
+    color: #1352a3;
 }
 
-h2 {
-    color: rgb(0, 121, 105);
-    text-align: center;
-    word-break: break-all;
+.projects .card-body {
+    padding: 1em;
 }
 
-#nfield1 {
-    width: 890px;
-    height: 25px;
-    padding: 0 10px;
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-image: url("./images/seattletransport.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
-#nfield1:hover, textarea:hover {
-    box-shadow: 0 0 1px rgb(0, 121, 105);
+.contact-form h1 {
+    padding: 2em 1px;
+    color: #1352a3;
+    position: relative;
+    z-index: 1;
 }
 
-.submitb {
-    background-color: rgb(0, 121, 105);
-    border: none;
-    cursor: pointer;
-    border-color: 1px solid rgb(0, 121, 105);
-    color: white;
-    width: 100px;
-    height: 31px;
-    text-align: center;
-    padding-top: 3px;
-    margin-top: 10px;  
+.contact-form .right {
+    max-width: 600px;
 }
 
-.submitb:hover {
-    background-color: rgb(0, 44, 38);
-    color: white;
+.contact-form .right .btn-secondary {
+    background: #0077ff;
+    color: #ffffff;
+    border: 0;
 }
 
-.submitb:active {
-    background-color: #00ff95;
-    color: white;
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
 }
 
-#p3 {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    color: #008d76;
+html, h1, h2, h3, h4, h5, h6, a {
+    font-family: Raleway;
 }
 
-textarea {
-    width: 890px;
-    height: 200px;
-    padding: 0 10px;
+.navbar-toggler {
+    transition: 0.5s;
 }
 
-@media screen and (max-width: 800px) {
-    .portfolio, .imgset, .text1, body {
-        width: 70%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .navbar-brand, .pfolpic1 {
-        width: 100%;
-        float: none;
-        text-align: center;
-        object-position: center;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .descript, form, .contactback { 
-        width: 70%;
-    }
+.navbar-toggler:hover {
+    box-shadow: 0 0 20px #0099ff;
 }

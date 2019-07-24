@@ -1,56 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard's Portfolio - About Me</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="shortcut icon" href="images/l4icon.ico" type="image/x-icon"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Indie+Flower|Francois+One|Molengo|Monoton|Righteous|Raleway|Rubik+Mono+One|Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image/x-icon"/>
 </head>
-
 <body>
-    
-    <nav class="navbar navbar-expand-lg fixed-top ">   
-        <a class="navbar-brand" href="index.html">Richard Z.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">   
+    <!-- navbar -->  
+    <nav class="navbar navbar-expand-lg fixed-top ">  
+        <a class="navbar-brand" data-value="header" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">  
                 <span class="navbar-toggler-icon"></span>
             </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">     
-                    <ul class="navbar-nav mr-4"> 
-                        <li class="nav-item">     
-                            <a class="nav-link" data-value="about" href="index.html">About</a>        
-                        </li>  
-                        <li class="nav-item">    
-                            <a class="nav-link " data-value="portfolio" href="portfolio.html">Portfolio</a>     
-                        </li>  
-                        <li class="nav-item">  <a class="nav-link " data-value="contact" href="contact.html">Contact</a>       
-                        </li> 
-                    </ul> 
-                </div>
+
+        <div class="collapse navbar-collapse " id="myNavbar">     
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="about" href="#">About</a>        
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>    
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link " data-value="projects" href="#">Projects</a>         
+                </li>   
+                <li class="nav-item"> 
+                    <a class="nav-link " data-value="contact" href="#">Contact</a>       
+                </li> 
+            </ul> 
+       </div>
     </nav>
-    
-    <header class="header">
-        
+
+    <!--Front Page Description-->
+    <header class="header" id="header">
         <div class="overlay"></div>
-            <div class="container">         
-                    <div class="backimage">
-                        <div class="descript">
-                            <h1>Thanks for visiting my page!</h1>
-                            <p>This area will be updated in the future.  For now, lipsum will be used. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. If you want to take a look at my work, head over to my Portfolio or simply click "See more".</p>
-                            <button class="btn btn-outline-secondary btn-lg" onclick = "window.location.href= 'portfolio.html';";>See more</button>
-            
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="description">
+                <h1>Hello, welcome to my Portfolio!</h1>
+                <p>I will update this description in the future.</p>
+                <a class="btn btn-lg btn-info" href="https://www.linkedin.com/in/richard-zhou-5152ab62/" target="_blank">LinkedIn</a>
+                <a class="btn btn-lg btn-success" href="https://github.com/rizho123" target="_blank">Github</a>
             </div>
+        </div>
     </header>
 
-  
+    <!--About Me-->
+    <div class="about" id="about">
+        <div class="container">
+            <h1 class="text-center">About Me</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="assets/images/profpic.png" class="img-fluid">
+                <span class="text-justify">Fullstack/Web Development Student</span>
+            </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 desc">
+            <h3>Richard Zhou</h3>
+            <p>Hello! I will update this in the future with a summary of personal experiences from working in IT, being a Fullstack/Web Development student, and any projects I've worked on and/or HW that I want to expand on.</p>
+        </div>
+        </div>
+        </div>
+    </div>
 
+    <!-- Portfolio(hw, etc) -->
+    <div class="portfolio" id="portfolio">
+        <h1 class="text-center">Portfolio</h1>
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="https://rizho123.github.io/Word-Guess-Game/">
+                <img src="https://github.com/rizho123/Word-Guess-Game/blob/master/assets/images/pagescreen.PNG?raw=true" class="portimg img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="https://rizho123.github.io/unit-4-game/">
+                <img src="https://github.com/rizho123/unit-4-game/blob/master/assets/images/etc/preview.PNG?raw=true" class="portimg img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="https://rizho123.github.io/Trivia-Game/">
+                <img src="https://github.com/rizho123/Trivia-Game/blob/master/assets/images/preview1.PNG?raw=true" class="portimg img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="https://rizho123.github.io/Giftastic/">
+                <img src="https://github.com/rizho123/GifTastic/blob/master/assets/images/preview1.PNG?raw=true" class="portimg img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="https://rizho123.github.io/Train-Schedule/">
+                <img src="https://github.com/rizho123/Train-Schedule/blob/master/assets/images/preview1.PNG?raw=true" class="portimg img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="">
+                <img src="assets/images/placeholder.png" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="">
+                <img src="assets/images/placeholder.png" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="">
+                <img src="assets/images/placeholder.png" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <a href="">
+                <img src="assets/images/placeholder.png" class="img-fluid">
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
 
+    <!-- Projects -->
+<div class="projects" id="projects">
+ <div class="container">
+ <h1 class="text-center">Projects</h1>
+  <div class="row">
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="https://github.com/slayermonster0/project-1/blob/richardTestBranch/assets/images/PREVIEW/front-page.jpg?raw=true" class="img-fluid">
+     </div>
+     
+     <div class="card-body">
+     <h4 class="card-title">Blood.hound</h4>
+      <p class="card-text">
+        A simple app that utilizes MediaWiki, Youtube, and News API to retrieve search results based on a keyword entered.
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="https://github.com/slayermonster0/project-1/tree/richardTestBranch" class="card-link">Github Repository</a>
+      <a href="https://slayermonster0.github.io/project-1/" class="card-link">Live Deploy</a>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="assets/images/placeholder.png" class="img-fluid">
+     </div>
+     
+     <div class="card-body">
+        <h4 class="card-title">Post Title</h4>
+      <p class="card-text">
+        Placeholder text.
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="" class="card-link">Read more</a>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="assets/images/placeholder.png" class="img-fluid">
+     </div>
+     
+     <div class="card-body">
+     <h4 class="card-title">Post Title</h4>
+      <p class="card-text">
+        Placeholder text.
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="" class="card-link">Read more</a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
 
-    <footer>
-        <h3>Copyright ©</h3>  <!--Need to anchor bground img to footer-->
-    </footer> 
+<!-- Contact form -->
+<div class="contact-form" id="contact">
+<div class="overlay"></div>
+ <div class="container">
+  <form>
+   <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h1>Get in Touch</h1> 
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12 right">
+       <div class="form-group">
+         <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+       </div>
+       <div class="form-group">
+         <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+       </div>
+       <div class="form-group">
+         <textarea class="form-control form-control-lg">
+          
+         </textarea>
+       </div>
+       <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+    </div>
+   </div>
+  </form>
+ </div>
+</div>
+
 </body>
 </html>
