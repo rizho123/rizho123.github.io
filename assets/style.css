@@ -9,11 +9,13 @@
 
 .nav-link {
     margin-right: 1em !important;
+    transition: 0.5s;
 }
 
 .nav-link:hover {
     background: #f4f4f4;
     color: #0074f9;
+    border-radius: 10px;
 }
 
 .navbar-collapse {
@@ -22,6 +24,16 @@
 
 .navbar-toggler {
     background: #ffffff !important;
+}
+
+.btn-success:hover {
+    box-shadow: 0 0 7px #28a745;
+    text-shadow: 0 0 3px #fff;
+}
+
+.btn-info:hover {
+    box-shadow: 0 0 7px #17a2b8;
+    text-shadow: 0 0 3px #fff;
 }
 
 .header {
@@ -121,6 +133,7 @@
     padding-top: 5%;
     position: relative;
     z-index: 1;
+    text-shadow: 0 0 20px #4e4e4e;
 }
 
 .portfolio img {
@@ -186,6 +199,7 @@
     color: #1352a3;
     position: relative;
     z-index: 1;
+    text-shadow: 0 0 20px #4e4e4e;
 }
 
 .contact-form .right {
@@ -196,6 +210,11 @@
     background: #0077ff;
     color: #ffffff;
     border: 0;
+    transition: 0.5s;
+}
+
+.contact-form .right .btn-secondary:hover {
+    background: #004696;
 }
 
 .contact-form .right .form-control::placeholder {
@@ -205,10 +224,6 @@
 
 html, h1, h2, h3, h4, h5, h6, a {
     font-family: Raleway;
-}
-
-.navbar-toggler {
-    transition: 0.5s;
 }
 
 .navbar-toggler:hover {
