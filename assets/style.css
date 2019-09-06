@@ -9,13 +9,18 @@
 
 .nav-link {
     margin-right: 1em !important;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .nav-link:hover {
     background: #f4f4f4;
     color: #0074f9;
     border-radius: 10px;
+}
+
+.nav-link:focus {
+    color: #00aaf9;
+    text-shadow: 0 0 10px #ffffff;
 }
 
 .navbar-collapse {
@@ -143,7 +148,7 @@
     margin: 1em;
     object-fit: cover;
     box-shadow: 0 0 20px rgb(0, 0, 0);
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .portfolio img:hover {
