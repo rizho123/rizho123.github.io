@@ -213,22 +213,23 @@
     </div>
     <div class="col-lg-8 col-md-8 col-sm-12 right">
        <div class="form-group">
-         <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+         <input type="email" class="form-control form-control-lg" id="email" placeholder="YourEmail@email.com" name="email">
        </div>
        <div class="form-group">
-         <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
-       </div>
+        <input type="text" class="form-control form-control-lg" id="subject" placeholder="Subject" name="subject">
+      </div>
        <div class="form-group">
-         <textarea class="form-control form-control-lg">
-          
-         </textarea>
+         <textarea class="form-control form-control-lg" name="message" id="message" placeholder="Your message here..."></textarea>
        </div>
-       <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+       <input type="submit" id="submit" class="btn btn-secondary btn-block" value="Send" name="">
     </div>
    </div>
   </form>
  </div>
 </div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="./assets/form.js"></script>
 
 </body>
 </html>
