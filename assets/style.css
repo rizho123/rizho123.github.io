@@ -148,14 +148,16 @@
     margin: 1em;
     object-fit: cover;
     box-shadow: 0 0 20px rgb(0, 0, 0);
-    transition: 0.2s;
+    transition: 0.15s;
 }
 
 .portfolio img:hover {
     filter: brightness(120%);
     box-shadow: 0 0 20px rgb(114, 114, 114);
-    transform: scale(1.01);
-    -webkit-transform: scale(1.01);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    outline: 1px solid #4973ffc5;
+    outline-offset: -4px;
 }
 
 .projects {
