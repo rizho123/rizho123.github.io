@@ -48,6 +48,7 @@
 
 .btn-danger:hover {
     box-shadow: 0 0 7px #b81717;
+    cursor: pointer;
     text-shadow: 0 0 3px #fff;
 }
 
