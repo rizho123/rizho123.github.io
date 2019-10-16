@@ -28,7 +28,12 @@
 }
 
 .navbar-toggler {
-    background: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .btn-success:hover {
@@ -38,6 +43,12 @@
 
 .btn-info:hover {
     box-shadow: 0 0 7px #17a2b8;
+    text-shadow: 0 0 3px #fff;
+}
+
+.btn-danger:hover {
+    box-shadow: 0 0 7px #b81717;
+    cursor: pointer;
     text-shadow: 0 0 3px #fff;
 }
 
@@ -235,5 +246,10 @@ html, h1, h2, h3, h4, h5, h6, a {
 }
 
 .navbar-toggler:hover {
+    box-shadow: 0 0 20px #0099ff;
+}
+
+.navbar-toggler:focus {
+    outline: none;
     box-shadow: 0 0 20px #0099ff;
 }
