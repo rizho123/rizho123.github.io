@@ -6,6 +6,10 @@ $(document).ready(function() {
         },1000)
       
     })
+
+    $(".submit").click(function(){
+        event.preventDefault();
+    })
 })
 
 
