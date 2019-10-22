@@ -253,3 +253,73 @@ html, h1, h2, h3, h4, h5, h6, a {
     outline: none;
     box-shadow: 0 0 20px #0099ff;
 }
+
+.iconSection {
+    padding: 45px 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 67, 154, 0.199);
+    border-radius: 10px;
+}
+
+.iconSection a {
+    color: transparent;
+    text-decoration: none;
+}
+.iconSection a {
+    background-color: transparent;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.iconSection a:hover {
+    color: transparent;
+}
+
+#test-icon {
+    font-size: 50px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px 15px 15px 15px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+}
+
+#test-icon:hover {
+    color: #4d6bbd;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+#test-icon:hover:after {
+    opacity: 1;
+    transform: scale(1.3);
+}
+#test-icon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 15px 3px #fff, 0 0 15px 3px #fff inset;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.bottomSection {
+    z-index: 1;
+    
+}
