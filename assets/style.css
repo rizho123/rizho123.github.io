@@ -162,8 +162,59 @@
     transition: 0.15s;
 }
 
-.portfolio img:hover {
-    filter: brightness(120%);
+.middle {
+    transition: .15s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+}
+
+.middle a {
+    color: yellow;
+    font-weight: bolder;
+    text-shadow: 0 0 7px #000;
+    transition: 0.3s ease;
+    margin: auto;
+}
+
+.middle a:hover {
+    text-decoration: none;
+    color: rgb(255, 236, 66);
+    text-shadow: 0 0 7px rgb(255, 230, 0);
+}
+
+#repo-icon {
+    font-size: 50px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px 15px 15px 15px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+}
+
+.middle a:hover #repo-icon {
+    color: #15b43a;
+    text-shadow: 0 0 7px #000;
+}
+
+.portContainer:hover .middle {
+    opacity: 1;
+}
+
+.portContainer:hover .portimg {
+    filter: brightness(120%) blur(3px);
     box-shadow: 0 0 20px rgb(114, 114, 114);
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
